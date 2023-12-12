@@ -20,7 +20,10 @@ export default function Home() {
     <main className="main main--home">
       <div className="row home-search">
         <img className="logo" src={logo} alt="Cognitive Search"></img>
-        <p className="poweredby lead">Powered by Azure AI Search</p>
+        <br></br>
+        <h1 className="poweredby lead">Dougs Report - Powered by Azure AI Search</h1>
+        <br></br>
+        <br></br>
         <SearchBar postSearchHandler={navigateToSearchPage}></SearchBar>
       </div>
     </main>
