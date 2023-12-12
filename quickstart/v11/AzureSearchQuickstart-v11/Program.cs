@@ -12,7 +12,7 @@ namespace AzureSearch.Quickstart
     {
         static void Main(string[] args)
         {
-            string serviceName = "<Put your search service NAME here>";
+            string serviceName = "dcb-cognitive-search-demo-rg";
             string apiKey = "<Put your search service ADMIN API KEY here>";
             string indexName = "hotels-quickstart";
 

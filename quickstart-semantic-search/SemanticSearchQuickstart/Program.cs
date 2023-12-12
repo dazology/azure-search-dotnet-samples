@@ -12,8 +12,8 @@ namespace SemanticSearch.Quickstart
     {
         static void Main(string[] args)
         {
-            string serviceName = "<YOUR-SEARCH-SERVICE-NAME>";
-            string apiKey = "<YOUR-SEARCH-ADMIN-API-KEY>";
+            string serviceName = "dcb-cognitive-search-demo-rg";
+            string apiKey = "4GlHCmFuvT0D44HB3cQ0qMof4FS8kYgnb8mcWJIai2AzSeCtvbyU";
             string indexName = "hotels-quickstart";
             
 
