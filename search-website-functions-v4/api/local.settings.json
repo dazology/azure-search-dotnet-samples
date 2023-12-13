@@ -3,8 +3,8 @@
   "Values": {
     "AzureWebJobsStorage": "",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
-    "SearchApiKey": "4GlHCmFuvT0D44HB3cQ0qMof4FS8kYgnb8mcWJIai2AzSeCtvbyU",
-    "SearchServiceName": "cb-cog-search-demo-svc",
+    "SearchApiKey": "hNMab33bsIfGJm2WPIOP23LeHOjHpRGHrZ8nXvJwj3AzSeAcNXUo",
+    "SearchServiceName": "dcb-cog-search-demo-1-svc",
     "SearchIndexName": "good-books"
   },
   "Host": {
