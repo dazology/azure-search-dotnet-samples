@@ -10,21 +10,22 @@ export default function Result(props) {
       prevDisplayType === "card" ? "table" : "card"
     );
   };
+  <button onClick={toggleDisplayType}>Toggle Display Type</button>
 
   if (displayType === "card") {
     return (
       <div>
-        <button onClick={toggleDisplayType}>Toggle Display Type</button>
         <div className="card result">
-          <a href={`/details/${props.document.id}`}>
-            <div className="card-body">
+             <div className="card-body">
+             <a href={`/details/${props.document.id}`}>         
               <h5 className="title-style">{props.document.Name}</h5>
+              </a>
               <p className="card-text">{props.document.Salary}</p>
               <p className="card-text">{props.document.Client}</p>
               <p className="card-text">{props.document.HiringManager}</p>
               <p className="card-text">{props.document.AddressCity} </p>
             </div>
-          </a>
+     
         </div>
       </div>
     );
