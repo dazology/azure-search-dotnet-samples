@@ -47,3 +47,8 @@ p.card-text {
     max-height: 12em;
     vertical-align: middle;
 }
+
+.results .result {
+  height: 18rem;
+  width: 11rem;
+}

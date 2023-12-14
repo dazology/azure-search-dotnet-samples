@@ -6,16 +6,13 @@ export default function Result(props) {
     return (
       <div>
         <div className="card result">
-             <div className="card-body">
-             <a href={`/details/${props.document.id}`}>         
-              <h5 className="title-style">{props.document.Name}</h5>
-              </a>
+             <div className="card-body">          
+              <h6 className="title-style">{props.document.Name}</h6>      
               <p className="card-text">{props.document.Salary}</p>
               <p className="card-text">{props.document.Client}</p>
               <p className="card-text">{props.document.HiringManager}</p>
               <p className="card-text">{props.document.AddressCity} </p>
-            </div>
-     
+            </div>     
         </div>
       </div>
     );
