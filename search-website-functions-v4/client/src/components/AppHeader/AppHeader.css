@@ -1,5 +1,5 @@
 .header {
-    background-color: #37b026;
+    background-color: #4d9ae7;
     color: #eee;
 }
 
@@ -8,7 +8,7 @@
     height: auto;
 }
 
-.nav-link { color: #fff; }
+.nav-link { color: #fff!important; }
 .nav-link:hover { color: #eee; }
 
 .auth-link { color: #fff; }
