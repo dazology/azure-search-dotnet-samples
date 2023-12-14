@@ -19,7 +19,7 @@ export default function Search() {
   const [ resultCount, setResultCount ] = useState(0);
   const [ currentPage, setCurrentPage ] = useState(1);
   const [ q, setQ ] = useState(new URLSearchParams(location.search).get('q') ?? "*");
-  const [ top ] = useState(new URLSearchParams(location.search).get('top') ?? 8);
+  const [ top ] = useState(new URLSearchParams(location.search).get('top') ?? 4);
   const [ skip, setSkip ] = useState(new URLSearchParams(location.search).get('skip') ?? 0);
   const [ filters, setFilters ] = useState([]);
   const [ facets, setFacets ] = useState({});

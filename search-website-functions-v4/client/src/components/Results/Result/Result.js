@@ -32,7 +32,6 @@ export default function Result(props) {
   } else if (displayType === "table") {
     return (
       <div>
-        <button onClick={toggleDisplayType}>Toggle Display Type</button>
         <table>
           <tr>
             <td>
