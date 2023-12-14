@@ -1,5 +1,4 @@
 import React from 'react';
-import AppHeaderAuth from '../AppHeaderAuth/AppHeaderAuth';
 
 import logo from '../../images/mercury_small.png';
 

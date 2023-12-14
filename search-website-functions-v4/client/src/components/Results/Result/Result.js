@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 export default function Result(props) {
 
   console.log(`result prop = ${JSON.stringify(props)}`);
