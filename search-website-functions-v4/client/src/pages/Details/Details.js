@@ -40,11 +40,11 @@ export default function Details() {
       resultStyle += " active";
       detailsBody = (
         <div className="card-body">
-          <h5 className="card-title">Vacancy Role: {document.name}</h5>
-          <p className="card-text">Salary: {document.salary}</p>
-          <p className="card-text">Client: {document.client}</p>
-          <p className="card-text">Hiring Manager: {document.hiringmanager}</p>
-          <p className="card-text">City: {document.addresscity} </p>
+          <h5 className="card-title">{document.Name}</h5>
+          <p className="card-text">{document.Salary}</p>
+          <p className="card-text">{document.Client}</p>
+          <p className="card-text">{document.HiringManager}</p>
+          <p className="card-text">{document.AddressCity} </p>
         </div>
       );
     }
