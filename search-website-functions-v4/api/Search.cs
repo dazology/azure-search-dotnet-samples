@@ -51,8 +51,8 @@ namespace WebSearch.Function
                 IncludeTotalCount = true,
                 Filter = CreateFilterExpression(data.Filters)
             };
-            options.Facets.Add("authors");
-            options.Facets.Add("language_code");
+            options.Facets.Add("Salary");
+            options.Facets.Add("HiringManager");
 
             SearchResults<SearchDocument> searchResults = searchClient.Search<SearchDocument>(data.SearchText, options);
 
@@ -93,21 +93,21 @@ namespace WebSearch.Function
             List<string> filterExpressions = new();
 
 
-            List<SearchFilter> authorFilters = filters.Where(f => f.field == "authors").ToList();
-            List<SearchFilter> languageFilters = filters.Where(f => f.field == "language_code").ToList();
+            List<SearchFilter> authorFilters = filters.Where(f => f.field == "Salary").ToList();
+            List<SearchFilter> languageFilters = filters.Where(f => f.field == "HiringManager").ToList();
 
             List<string> authorFilterValues = authorFilters.Select(f => f.value).ToList();
 
             if (authorFilterValues.Count > 0)
             {
                 string filterStr = string.Join(",", authorFilterValues);
-                filterExpressions.Add($"{"authors"}/any(t: search.in(t, '{filterStr}', ','))");
+                filterExpressions.Add($"{"Salary"}/any(t: search.in(t, '{filterStr}', ','))");
             }
 
             List<string> languageFilterValues = languageFilters.Select(f => f.value).ToList();
             foreach (var value in languageFilterValues)
             {
-                filterExpressions.Add($"language_code eq '{value}'");
+                filterExpressions.Add($"HiringManager eq '{value}'");
             }
 
             return string.Join(" and ", filterExpressions);

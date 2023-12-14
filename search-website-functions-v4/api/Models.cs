@@ -62,31 +62,36 @@ namespace WebSearch.Models
         [JsonPropertyName("document")]
         public SearchDocument Document { get; set; }
     }
-    public class BookModel
+
+    public class VacancyModel
     {
         public string id { get; set; }
-        public decimal? goodreads_book_id { get; set; }
-        public decimal? best_book_id { get; set; }
-        public decimal? work_id { get; set; }
-        public decimal? books_count { get; set; }
-        public string isbn { get; set; }
-        public string isbn13 { get; set; }
-        public string[] authors { get; set; }
-        public decimal? original_publication_year { get; set; }
-        public string original_title { get; set; }
-        public string title { get; set; }
-        public string language_code { get; set; }
-        public double? average_rating { get; set; }
-        public decimal? ratings_count { get; set; }
-        public decimal? work_ratings_count { get; set; }
-        public decimal? work_text_reviews_count { get; set; }
-        public decimal? ratings_1 { get; set; }
-        public decimal? ratings_2 { get; set; }
-        public decimal? ratings_3 { get; set; }
-        public decimal? ratings_4 { get; set; }
-        public decimal? ratings_5 { get; set; }
-        public string image_url { get; set; }
-        public string small_image_url { get; set; }
+
+        public string VacancyId { get; set; }
+
+        public string Name { get; set; }
+
+        public string Reference { get; set; }
+        public string Client { get; set; }
+        public string Contract { get; set; }
+        public string HiringManager { get; set; }
+        public string AddressCity { get; set; }
+
+        public string AddressPostCode { get; set; }
+        public string AddressCountry { get; set; }
+        // public int TotalPositions { get; set; }
+        // public int RemainingPositions { get; set; }
+        // public string FurthestStatus { get; set; }
+         public double Salary { get; set; }
+        // public int PermPackageValue { get; set; }
+        // public int TempFrequency { get; set; }
+        // public int TempSalary { get; set; }
+        // public int HoursPerWeek { get; set; }
+        // public int DaysPerWeek { get; set; }
+        // public int NumberOfWeeks { get; set; }
+        // public string Currency { get; set; }
+        // public string? JobDescription { get; set; }
+        // public string? Tags { get; set; }
     }
 }
 
